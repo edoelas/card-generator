@@ -1,0 +1,100 @@
+@font-face { font-family: Copperplate; src: url('font/Copperplate Gothic Bold Regular.ttf'); } 
+@font-face { font-family: GowunBatang-Bold; src: url('font/GowunBatang-Bold.ttf'); } 
+@font-face { font-family: GowunBatang-Regular; src: url('font/GowunBatang-Regular.ttf'); } 
+body { width: 1000px; }
+:root {
+    --background: #fff;
+    --layout: #c00c0c;
+    --content: #000;
+}
+
+img{
+    float:left;
+    margin: 0px 15px 0px 10px;
+}
+
+.block{
+    background-color: var(--background)
+}
+
+.title{
+    color: var(--layout);
+
+    text-align: center;
+    margin: 5px 0px 15px 0px;
+    font-size: 35px;
+    font-family: Copperplate;
+}
+
+.text{
+    font-size: 32px;
+    margin: 0px 30px 30px 30px;
+    font-family: GowunBatang-Bold;
+    line-height: 38px;
+}
+
+.cell{
+    text-align: left;
+    font-size: 38px;
+    font-family: GowunBatang-Bold;
+
+    border-right: 5px solid var(--layout);
+    padding: 5px;
+    height: 100%;
+    flex-grow: 1;
+}
+
+#card{
+    border-radius: 38px;
+    box-sizing: border-box;
+    height:1050px;
+    width: 750px;
+    background-color: var(--layout);
+    padding: 19px;
+
+    display: flex; /* or inline-flex */
+    flex-direction: column;
+}
+
+#head{
+    border-radius: 19px 19px 0px 0px;
+    height: 150px;
+    flex-direction: column;
+}
+
+#name{
+    color: var(--content);
+    white-space: nowrap;
+    text-align: center;
+    margin: 10px 10px 0px 10px;
+    font-size: 80px;
+    font-family: Copperplate;
+    background-color: blue;
+    width: fit-content;
+}
+
+#tags{
+    text-align: center;
+    font-size: 32px;
+    font-family: GowunBatang-Regular;
+}
+
+#values{
+    margin-top: 20px;
+    height: 60px;
+    display: flex; /* or inline-flex */
+    flex-direction: row;
+}
+
+
+#description{
+    margin-top: 20px;
+    height: 100px;
+
+    flex-grow: 1;
+}
+#requirements{
+    border-radius: 0px 0px 19px 19px;
+
+    margin-top: 20px;
+}

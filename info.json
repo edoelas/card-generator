@@ -1,0 +1,15 @@
+{
+    "config": {
+        "colour": "#f00"
+    },
+    "cards": [
+        {
+            "amount": 2,
+            "name":"Too looooong title",
+            "tags": "test",
+            "values": { "icon": 100, "icon2": 100}, 
+            "description":"descrition",
+            "requirements": "requirements"
+        }
+    ]
+}
