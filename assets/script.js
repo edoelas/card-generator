@@ -9,10 +9,10 @@ function scaleFontSize(element) {
   
     var rmar = parseFloat(window.getComputedStyle(element, null).getPropertyValue('margin-right'));
     var lmar = parseFloat(window.getComputedStyle(element, null).getPropertyValue('margin-right'));
-    // while (element.offsetWidth + rmar + lmar > element.parentElement.clientWidth) {
-    //     currentSize = parseFloat(element.style.fontSize);
-    //     element.style.fontSize = (currentSize - 0.1) + 'px';
-    //     //console.log(element.style.fontSize)
-    // }
+    while (element.offsetWidth + rmar + lmar > element.parentElement.clientWidth) {
+        currentSize = parseFloat(element.style.fontSize);
+        element.style.fontSize = (currentSize - 0.1) + 'px';
+        //console.log(element.style.fontSize)
+    }
 }
 
