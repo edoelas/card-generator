@@ -10,32 +10,32 @@
 
 <body>
 <div id="card">
-    <div id="head" class="block">
-        <div id="name">{{name}}</div>
-        <div id="tags">{{tags}}</div>
-    </div>
-    <div id="values" class="block">
-        <div class="cell">
-            <img src="../assets/icon/coins.svg" height="50" width="50"/>200
+    <div id="content">
+        <div id="head" class="block">
+            <div id="name">{{name}}</div>
+            <div id="tags">{{tags}}</div>
         </div>
-        <div class="cell">
-            <img src="../assets/icon/move.svg" height="50" width="50"/>200
+        <div id="values" class="block">
+            {% for icon, value in values.items() %}
+            <div class="cell">
+                <img src="../assets/icon/{{icon}}.svg" height="50" width="50"/>{{value}}
+            </div>
+            {%endfor%}
         </div>
-        <div class="cell" style="margin-right: -5px;">
-            <img src="../assets/icon/index.svg" height="50" width="50"/>200
+        <div id="description" class="block">
+            <div class="title"> Descripción</div>
+            <div class="text">
+                {{description}}
+            </div>
         </div>
-    </div>
-    <div id="description" class="block">
-        <div class="title"> Descripción</div>
-        <div class="text">
-            {{description}}
+        {% if requirements != '' %}
+        <div id="requirements" class="block">
+            <div class="title"> Requisitos</div>
+            <div class="text">
+                {{requirements}}
+            </div>
         </div>
-    </div>
-    <div id="requirements" class="block">
-        <div class="title"> Requisitos</div>
-        <div class="text">
-            {{requirements}}
-        </div>
+        {% endif %}
     </div>
 </div>
 </body>

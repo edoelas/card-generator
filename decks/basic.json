@@ -1,0 +1,146 @@
+[
+    {
+        "amount": 1,
+        "name":"Tirita",
+        "tags": "Físico, soporte",
+        "values": { "coins": 0, "index": 1}, 
+        "description":"Cura 2 de vida a un jugador a una distancia <= 4 casillas.",
+        "requirements": ""
+    },
+    {
+        "amount": 1,
+        "name":"Garrotazo",
+        "tags": "Físico, ataque",
+        "values": { "coins": 0, "index": 2}, 
+        "description":"Causa 3 de daño a un enemigo adyacente.\nTermina el turno.",
+        "requirements": ""
+    },
+    {
+        "amount": 1,
+        "name":"Correr",
+        "tags": "Físico, movimiento",
+        "values": { "coins": 0, "index": 3}, 
+        "description":"Se mueve ≤3 posiciones.",
+        "requirements": ""
+    },
+    {
+        "amount": 1,
+        "name":"Lanzar piedra",
+        "tags": "Físico, ataque, distancia",
+        "values": { "coins": 0, "index": 4}, 
+        "description":"Causa 2 de daño a una entidad situada en cruz a una distancia <= 3.",
+        "requirements": ""
+    },
+    {
+        "amount": 1,
+        "name":"Salto",
+        "tags": "Físico, movimiento",
+        "values": { "coins": 0, "index": 5}, 
+        "description":"Se mueve exactamente 2 casillas en línea recta. Puede saltar sobre entidades, trampas o agujeros.",
+        "requirements": ""
+    },
+    {
+        "amount": 1,
+        "name":"Descansar",
+        "tags": "Físico, soporte",
+        "values": { "coins": 0, "index": 6}, 
+        "description":"Se cura [5, 3, 2] de vida por cada aliado que este a su alrededor.",
+        "requirements": ""
+    },
+    {
+        "amount": 1,
+        "name":"Resistir",
+        "tags": "Físico, soporte",
+        "values": { "coins": 0, "index": 7}, 
+        "description":"Causa +3 DEF a un aliado a una distancia ≤ 3 hasta el final del turno.",
+        "requirements": ""
+    },
+    {
+        "amount": 1,
+        "name":"Patada giratoria",
+        "tags": "Físico, ataque",
+        "values": { "coins": 0, "index": 8}, 
+        "description":"Causa 3 de daño a todas las entidades a una distancia distancia ≤2.\nTermina el turno.",
+        "requirements": ""
+    },
+    {
+        "amount": 1,
+        "name":"Empujar",
+        "tags": "Físico, movimiento",
+        "values": { "coins": 0, "index": 9}, 
+        "description":"Desplaza 1 posicion a una entidad adyacente.",
+        "requirements": ""
+    },
+    {
+        "amount": 1,
+        "name":"Carga",
+        "tags": "Físico, movimiento, ataque",
+        "values": { "coins": 0, "index": 10}, 
+        "description":"Se desplaza en cruz una distancia ≤5.\nSi tiene enfrente una entidad causa tanto daño como casillas se haya desplazado.\nTermina el turno.",
+        "requirements": ""
+    },
+    {
+        "amount": 1,
+        "name":"Sprint",
+        "tags": "Físico, movimiento",
+        "values": { "coins": 0, "index": 11}, 
+        "description":"Se mueve ≤5 posiciones.\nNo se puede llevar a cabo mas acciones hasta el próximo turno.",
+        "requirements": ""
+    },
+    {
+        "amount": 1,
+        "name":"Ataque combinado",
+        "tags": "Físico, ataque",
+        "values": { "coins": 0, "index": 12}, 
+        "description":"Causa [4,2,2] daño por aliado adyacente al enemigo.",
+        "requirements": ""
+    },
+    {
+        "amount": 1,
+        "name":"Drenaje mágico",
+        "tags": "Mágico, soporte",
+        "values": { "coins": 0, "index": 13}, 
+        "description":"Quita ≤5 vida a un aliado para dárselo a otra entidad. Las entidades deben estar a una distancia ≤4.\nTermina el turno.",
+        "requirements": "INT ≥ 8"
+    },
+    {
+        "amount": 1,
+        "name":"Zombie",
+        "tags": "Magico, efecto",
+        "values": { "coins": 0, "index": 14}, 
+        "description":"Las habilidades de cura restan vida en lugar de sumarla",
+        "requirements": "INT ≥ 8"
+    },
+    {
+        "amount": 0,
+        "name":"Motivar",
+        "tags": "Mágico, soporte",
+        "values": { "coins": 0, "index": 15}, 
+        "description":"+2 daño en el siguiente ataque a una entidad adyacente.",
+        "requirements": ""
+    },
+    {
+        "amount": 1,
+        "name":"Escudo mágico",
+        "tags": "Mágico, soporte",
+        "values": { "coins": 0, "index": 16}, 
+        "description":"Protege de cualquier ataque físico a una entidad a una distancia ≤4. \nEl jugador que ejecuta la habilidad y el que la recibe terminan el turno.",
+        "requirements": ""
+    },
+    {
+        "amount": 1,
+        "name":"Movimiento de caballo",
+        "tags": "Físico, movimiento",
+        "values": { "coins": 0, "index": 17}, 
+        "description":"Se mueve exactamente 2 posiciones en línea recta y luego una a su izquierda o derecha.",
+        "requirements": ""
+    },
+    {
+        "amount": 1,
+        "name":"Intercambio",
+        "tags": "Mágico, movimiento",
+        "values": { "coins": 0, "index": 18}, 
+        "description":"Intercambia su posición con la de otra entidad a una distancia <=4.\nTermina el turno.",
+        "requirements": ""
+    }
+]

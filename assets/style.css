@@ -27,7 +27,7 @@ img{
 }
 
 .text{
-    font-size: 32px;
+    font-size: 40px;
     margin: 0px 30px 30px 30px;
     font-family: GowunBatang-Bold;
     line-height: 38px;
@@ -52,14 +52,19 @@ img{
     background-color: var(--layout);
     padding: 19px;
 
+}
+
+#content{
+    border-radius: 19px 19px 19px 19px;
+    height: 100%;
+    overflow: hidden;
     display: flex; /* or inline-flex */
     flex-direction: column;
+
 }
 
 #head{
-    border-radius: 19px 19px 0px 0px;
     height: 150px;
-    flex-direction: column;
 }
 
 #name{
@@ -69,8 +74,7 @@ img{
     margin: 10px 10px 0px 10px;
     font-size: 80px;
     font-family: Copperplate;
-    background-color: blue;
-    width: fit-content;
+    min-width: fit-content;
 }
 
 #tags{
